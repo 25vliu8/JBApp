@@ -1,0 +1,86 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#AACFEC"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#A9D8F3"
+    android:layout_gravity="end|top">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+        <TextView
+            android:id="@+id/title_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Title: "
+            android:textStyle="bold"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/job_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/title_label"
+            android:text="insert title"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/company_label"
+            android:layout_below="@id/title_label"
+            android:text="insert company"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/company_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_label"
+            android:textStyle="bold"
+            android:text="Company: "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/salary_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/company_label"
+            android:layout_toRightOf="@id/salary_label"
+            android:text="insert salary"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/salary_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/company_label"
+            android:text="Salary Range: "
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/salary_label"
+            android:layout_toRightOf="@id/location_label"
+            android:text="insert location"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/location_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/salary_label"
+            android:text="Location: "
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

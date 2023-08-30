@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewJobActivity"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Job"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="15dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/design_default_color_primary_dark"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="19dp" />
+
+            <TextView
+                android:id="@+id/note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="**All fields required"
+                android:textSize="20sp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="15dp"
+                android:textColor="@color/purple_200"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="19dp" />
+
+            <TextView
+                android:id="@+id/title_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Title"
+                android:textSize="20sp"
+                android:paddingLeft="15dp"
+                android:textColor="@color/common_google_signin_btn_text_light"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="19dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/title_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Add job title" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/company_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company"
+                android:textSize="20sp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/common_google_signin_btn_text_light"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="19dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/company_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Add company name" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/salary_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salary Range"
+                android:textSize="20sp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/common_google_signin_btn_text_light"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="19dp" />
+
+            <TextView
+                android:id="@+id/min_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="min."
+                android:textSize="20sp"
+                android:paddingStart="25dp"
+                android:textColor="@color/design_default_color_primary"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="19dp" />
+
+            <EditText
+                android:id="@+id/minNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/max_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="max."
+                android:textSize="20sp"
+                android:paddingStart="25dp"
+                android:textColor="@color/design_default_color_primary"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="19dp" />
+
+            <EditText
+                android:id="@+id/maxNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/location_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textSize="20sp"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/common_google_signin_btn_text_light"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="19dp" />
+
+            <EditText
+                android:id="@+id/location_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:ems="10"
+                android:inputType="textPostalAddress" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Submit job"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
